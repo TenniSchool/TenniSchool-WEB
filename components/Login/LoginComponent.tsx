@@ -10,6 +10,7 @@ export default function LoginComponent() {
     }
     return (
         <div>
+            <h1> 로그인 폼 </h1>
             <form>
                 <div>
                     <label> ID: </label>
