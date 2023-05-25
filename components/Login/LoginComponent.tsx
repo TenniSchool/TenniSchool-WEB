@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react"
 
-export default function LoginComponent() {
+export default function LoginComponent({ setIs_singup }) {
 
     const [inputId, setInputId] = useState("");
     const [inputPw, setInputPw] = useState("");
 
     const loginBtnOnClick = () => {
 
+    }
+    const signupBtnOnClick = () => {
+        setIs_singup(true);
     }
     return (
         <div>
@@ -20,9 +23,14 @@ export default function LoginComponent() {
                     <label> PassWord: </label>
                     <input className="pw" onChange={(event) => setInputPw(event.target.value)} />
                 </div>
-                <button onClick={loginBtnOnClick}>
-                    로그인
-                </button>
+                <div className="grid gap-2 col-2 row-2">
+                    <button onClick={loginBtnOnClick}>
+                        로그인
+                    </button>
+                    <button onClick={signupBtnOnClick}>
+                        회원가입
+                    </button>
+                </div>
             </form>
         </div>
     )
