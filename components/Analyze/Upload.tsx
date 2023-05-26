@@ -7,7 +7,6 @@ export default function Upload() {
 
     const selectFile = useRef(null);
     const [video, setVideo] = useState(null);
-    const [imageSrc, setImageSrc] = useState('');
 
     const [userImage, setUserImage] = useState("");
 

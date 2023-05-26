@@ -4,16 +4,16 @@ import SignUpComponent from "@/components/SignUP/SignUpComponent";
 
 import { useState } from "react"
 
-export default function loginpage() {
+export default function Loginpage() {
 
-    const [is_signup, setIs_singup] = useState(false);
+    const [issignup, setIsSignup] = useState(false);
 
 
     return (
         <div>
             <Navupbar />
-            {!is_signup ?
-                <LoginComponent setIs_singup={setIs_singup} />
+            {!issignup ?
+                <LoginComponent setIs_singup={setIsSignup} />
                 : <SignUpComponent />
             }
         </div>
