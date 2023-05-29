@@ -7,11 +7,14 @@ export default function HomeMenu() {
     function analyzeBtnonClick() {
         router.push("/analyzepage");
     }
+    function matchingBtnonClick() {
+        router.push("/matching");
+    }
     return (
         <div className="grid gap-4 grid-cols-4 grid-rows-3 bg-blue-100">
             <button className="bg-slate-300" onClick={analyzeBtnonClick}>분석</button>
             <button className="bg-slate-300">용품</button>
-            <button className="bg-slate-300">매칭</button>
+            <button className="bg-slate-300" onClick={matchingBtnonClick}>매칭</button>
             <button className="bg-slate-300">레슨</button>
 
             <button className="bg-slate-300">코트</button>
