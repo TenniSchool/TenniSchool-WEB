@@ -45,8 +45,8 @@ export default function Matching() {
                 onUploadMatching ?
                     <UploadMatching setItems={setItems} setOnUploadMatching={setOnUploadMatching} />
                     :
-                    items.map((item) =>
-                        <MatchingItem data={item} />
+                    items.map((item,index) =>
+                        <MatchingItem key = {index} data={item} />
                     )
             }
         </div>
