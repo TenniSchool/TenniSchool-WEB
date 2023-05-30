@@ -1,4 +1,4 @@
-import MatchingItem from "/components/Matching/MatchingItem"
+import MatchingItem from "/components/Matching"
 import Navupbar from "/components/NavBar/navupbar"
 import { useState } from "react"
 import UploadMatching from "@/components/Matching/UploadMatching";
@@ -45,8 +45,8 @@ export default function Matching() {
                 onUploadMatching ?
                     <UploadMatching setItems={setItems} setOnUploadMatching={setOnUploadMatching} />
                     :
-                    items.map((item,index) =>
-                        <MatchingItem key = {index} data={item} />
+                    items.map((item, index) =>
+                        <MatchingItem key={index} data={item} />
                     )
             }
         </div>
