@@ -1,7 +1,7 @@
 
-export default function Matching({ data }) {
+export default function MatchingItem({ data }) {
 
-   
+
     return (
         <div className="bg-blue-100">
 

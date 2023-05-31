@@ -1,4 +1,4 @@
-import MatchingItem from "/components/Matching"
+import MatchingItem from "@/components/Matching/MatchingItem";
 import Navupbar from "/components/NavBar/navupbar"
 import { useState } from "react"
 import UploadMatching from "@/components/Matching/UploadMatching";
